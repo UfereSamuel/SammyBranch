@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/customAlertImg"
+        android:id="@+id/a"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:background="@android:color/holo_red_light"
+        android:src="@drawable/dialog_cross"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_dialog"
+        android:layout_below="@+id/a"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/customAlertMargin_L_R"
+        android:layout_marginRight="@dimen/customAlertMargin_L_R"
+        android:layout_marginBottom="@dimen/margin"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        android:textColor="@color/text_black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/customAlertBtnHeight"
+        android:text="@string/btn_ok"
+        android:id="@+id/btn_dialog"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/text_dialog"
+        android:layout_marginBottom="@dimen/margin"
+        android:background="@drawable/btnlogin_bg"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

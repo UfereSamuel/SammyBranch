@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slide1"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    tools:context="com.nhubnigeria.engineering.psirs.activity.Login">
+
+    <ImageView
+        android:id="@+id/psirs_logo"
+        android:layout_width="@dimen/logo_w_h"
+        android:layout_height="@dimen/logo_w_h"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/imageView_marginTopLogin"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/psirs_logo"
+        android:layout_marginTop="@dimen/phone_marginTop"
+        android:background="@drawable/phone_border"
+        android:drawablePadding="@dimen/phone_drawPadding"
+        android:drawableStart="@drawable/ic_phone"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:padding="@dimen/body_paddingLogin"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_phone"
+        android:layout_marginTop="@dimen/body_marginTopLogin"
+        android:background="@drawable/password_border"
+        android:drawablePadding="@dimen/phone_drawPadding"
+        android:drawableStart="@drawable/ic_key"
+        android:focusableInTouchMode="true"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:padding="@dimen/body_paddingLogin"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_marginTop="@dimen/btn_marginTop"
+        android:background="@null"
+        android:text="@string/btn_forgot_password"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/btn_txtSize" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="@dimen/button_layoutWidth_login"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/body_marginTopLogin"
+        android:background="@drawable/btnlogin_bg"
+        android:text="@string/login_btn_login"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <!-- Link to Login Screen -->
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginbtn"
+        android:layout_marginStart="@dimen/signup_marginStart"
+        android:layout_marginTop="@dimen/signup_marginTop"
+        android:background="@null"
+        android:text="@string/btn_link_to_register"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_txtSize"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/progressBar_marginTop"
+        android:backgroundTint="@android:color/white"
+        android:indeterminate="true"
+        android:indeterminateTint="@android:color/holo_red_dark"
+        android:max="11"
+        android:visibility="gone" />
+
+</RelativeLayout>

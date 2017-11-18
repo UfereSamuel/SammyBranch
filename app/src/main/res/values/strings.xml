@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">FAITH</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="forgot_password_msg">Enter your phone number and we will send you instructions
+    on how to reset your password</string>
+
+    <string name="slide_1_title">Jesus only is our message</string>
+    <string name="slide_1_desc">The easiest way to make your tax payments from the
+        comfort of your home</string>
+
+    <string name="slide_2_title">The way of the cross leads home</string>
+    <string name="slide_2_desc">Seamlessly login with phone number and password</string>
+
+    <string name="slide_3_title">Earnestly content for the faith</string>
+    <string name="slide_3_desc">Search and view your tax transaction history</string>
+
+    <string name="hint_phone">Phone</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_forgot_password">FORGOT PASSWORD? CLICK HERE</string>
+    <string name="btn_link_to_register">Not a member? Click to register</string>
+
+    <string name="hint_username">UserName</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_second_password">Confirm Password</string>
+    <string name="search">Search</string>
+
+
+
+    <string name="profile_header_text">What would you like to do?</string>
+    <string name="history">HISTORY</string>
+    <string name="pay_tax">PAY TAX</string>
+    <string name="faq">Need Help? Check our FAQ</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Welcome User</item>
+        <item>logout</item>
+    </string-array>
+    <!--Activity login items-->
+    <string name="btn_ok">OK</string>
+    <string name="login_btn_login">Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pick_country" />
+</resources>

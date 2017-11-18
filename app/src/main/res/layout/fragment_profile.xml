@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slide1"
+    tools:context="com.nhubnigeria.engineering.psirs.fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/relative_layout_padding">
+
+        <ImageView
+            android:id="@+id/profile_logo"
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/img_marginBottom"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_header"
+            android:layout_below="@id/profile_logo"
+            android:text="@string/profile_header_text"
+            android:textSize="@dimen/tv_txtSize"
+            android:textColor="@color/profile_txtColor"/>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height"
+            android:layout_below="@id/profile_header"
+            android:layout_marginEnd="@dimen/view_marginEnd"
+            android:layout_marginTop="@dimen/view_marginTop"
+            android:layout_marginBottom="@dimen/view_marginBottom"
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/view">
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/linearlayout"
+            android:layout_marginEnd="@dimen/view_marginEnd"
+            android:layout_marginTop="@dimen/view_marginTop"
+            android:layout_marginBottom="@dimen/view_marginBottom"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/faq"
+            android:layout_below="@id/view2"
+            android:text="@string/faq"
+            android:textSize="@dimen/textSize"
+            android:drawableStart="@drawable/ic_help"
+            android:drawablePadding="@dimen/drawablePad"
+            android:textColor="@color/profile_txtColor"/>
+    </RelativeLayout>
+
+</FrameLayout>
